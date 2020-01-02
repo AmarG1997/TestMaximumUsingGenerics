@@ -4,13 +4,10 @@ import java.util.Arrays;
 public class MaxElement <E extends  Comparable> {
 
     public <E extends Comparable> E testMax(E ...values) {
-        //System.out.println("Number of arguments:"+values);
         E val[]=values;
         Arrays.sort(val);
         System.out.println("maximum value is"+val[val.length-1]);
         return val[val.length-1];
-
-
     }
 
     public E testMaximum(E a, E b ,E c)
