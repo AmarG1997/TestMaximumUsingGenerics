@@ -24,4 +24,16 @@ public class MaxElement {
 
         return maxValue;
     }
+
+    public String testStringMax(String a, String b, String c) {
+        String  maxValue=a;
+        if (b.compareTo(maxValue)>0) {
+            maxValue = b;
+        }
+        if (c.compareTo(maxValue)>0) {
+            maxValue = c;
+        }
+
+        return maxValue;
+    }
 }
