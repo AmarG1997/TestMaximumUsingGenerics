@@ -3,6 +3,13 @@ import org.junit.Test;
 
 public class MaximumNumberTest {
     @Test
+    public void whenGivenMultipleNumber_shouldReturnMaxNumber() {
+        MaxElement maxElement = new MaxElement();
+        int max = (int) maxElement.testMax(9,2,6,13);
+        Assert.assertEquals(13,max);
+    }
+
+    @Test
     public void whenGivenThreeNumber_ifFirstNumberIsMax_shouldReturnFirstNumber() {
         MaxElement maxElement = new MaxElement();
         int max = (int) maxElement.testMax(9,2,6);
@@ -19,7 +26,7 @@ public class MaximumNumberTest {
     @Test
     public void whenGivenThreeInteger_ifThirdNumberIsMax_shouldReturnThirdNumber() {
         MaxElement maxElement = new MaxElement();
-        int max = (int) maxElement.testMax(9,12,16);
+        int max = (int) maxElement.testMaximum(9,12,16);
         Assert.assertEquals(16,max);
     }
 
