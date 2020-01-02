@@ -22,4 +22,25 @@ public class MaximumNumberTest {
         int max = maxElement.testMax(9,12,16);
         Assert.assertEquals(16,max);
     }
+
+    @Test
+    public void whenGivenThreeDoubleNumbers_ifFirstNumberIsMax_shouldReturnFirstNumber() {
+        MaxElement maxElement = new MaxElement();
+        float max = maxElement.testFloatMax(9.1f,2.1f,6.1f);
+        Assert.assertEquals(9.1f,max,0.0);
+    }
+
+    @Test
+    public void whenGivenThreeDoubleNumbers_ifSecondNumberIsMax_shouldReturnSecondNumber() {
+        MaxElement maxElement = new MaxElement();
+        float max = maxElement.testFloatMax(9.1f,12.1f,6.1f);
+        Assert.assertEquals(12.1f,max,0.0);
+    }
+
+    @Test
+    public void whenGivenThreeDoubleNumbers_ifThirdNumberIsMax_shouldReturnThirdNumber() {
+        MaxElement maxElement = new MaxElement();
+        float max = maxElement.testFloatMax(9.1f,12.1f,16.1f);
+        Assert.assertEquals(16.1f,max,0.0);
+    }
 }
