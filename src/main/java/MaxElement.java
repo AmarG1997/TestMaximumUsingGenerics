@@ -4,7 +4,6 @@ public class MaxElement <E extends  Comparable> {
 
     public <E extends Comparable> E testMax(E ...values) {
         Arrays.sort(values);
-        System.out.println("maximum value is"+values[values.length-1]);
         return values[values.length-1];
     }
 
